@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .cont {
+        padding: 8px;
+        text-align: left;
+        font-weight: bold;
+        font-family: Cambria;
+        font-size: large;
+      }
+
+      .but {
+        padding: 8px;
+        text-align: center;
+      }
+
+      button {
+        width: 100%;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <form
+        class="form m-4 p-4 was-validated"
+        style="
+          background-color: rgba(128, 126, 126, 0.11);
+          max-width: 40%;
+          border-radius: 8px;
+        "
+      >
+        <div class="cont">
+          <label class="form-label"> Name </label>
+          <input class="form-control" type="text" required />
+          <div class="invalid-feedback">Name is required</div>
+        </div>
+
+        <div class="cont">
+          <label class="form-label">Email</label>
+          <input class="form-control" type="text" required />
+          <div class="invalid-feedback">Email is required</div>
+        </div>
+
+        <div class="cont">
+          <label class="form-label">Password</label>
+          <input class="form-control" type="password" required />
+          <div class="invalid-feedback">Password is required</div>
+        </div>
+
+        <div class="cont">
+          <label class="form-label">Hobbies</label>
+          <input class="form-control" type="number" required />
+        </div>
+
+        <div class="but">
+          <button class="btn btn-danger">Submit</button>
+        </div>
+      </form>
+    </center>
+  </body>
+</html>

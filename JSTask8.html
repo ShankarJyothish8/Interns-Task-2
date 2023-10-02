@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 7</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background: linear-gradient(to bottom, #df87b7, #f4e4b1);
+      }
+    </style>
+  </head>
+  <body class="bg-danger">
+    <center>
+      <h1 class="text-primary pb-5">Registration form</h1>
+      <form class="bg-dark form" style="max-width: 600px">
+        <table cellpadding="10px" class="table table-borderless">
+          <tr>
+            <td>
+              <label class="form-label pe-5 text-light">First Name</label>
+            </td>
+            <td>
+              <input
+                class="form-control rounded"
+                id="i1"
+                type="text"
+                onkeyup="name()"
+              />
+              <span class="span bg-dark text-danger" id="msg1"> POOR</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="form-label pe-5 text-light">Last Name</label></td>
+            <td><input class="form-control rounded" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label class="form-label pe-5 text-light">E-Mail</label></td>
+            <td><input class="form-control rounded" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label class="form-label pe-5 text-light">Password</label></td>
+            <td><input class="form-control rounded" type="password" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label class="form-label pe-5 text-light">Re-Password</label>
+            </td>
+            <td><input class="form-control rounded" type="password" /></td>
+          </tr>
+          <tr>
+            <td><label class="form-label pe-5 text-light">Gender</label></td>
+            <td>
+              <input
+                type="radio"
+                value="male"
+                name="gender"
+                class="form-check-input"
+              />
+              <label class="form-label text-light"> Male </label><br />
+              <input
+                type="radio"
+                value="female"
+                name="gender"
+                class="form-check-input"
+              />
+              <label class="form-label text-light">Female</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="form-label pe-5 text-light">Age</label></td>
+            <td><input class="form-control rounded" type="number" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label class="form-label pe-5 text-light">Phone Number</label>
+            </td>
+            <td><input class="form-control rounded" type="number" /></td>
+          </tr>
+          <tr>
+            <td><label class="form-label pe-5 text-light">Address</label></td>
+            <td><textarea class="form-control rounded"></textarea></td>
+          </tr>
+          <tr>
+            <td><label class="form-label pe-5 text-light">State</label></td>
+            <td><input class="form-control rounded" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label class="form-label pe-5 text-light">Country</label></td>
+            <td>
+              <select class="form-select bg-light">
+                <option class="form-select">India</option>
+                <option class="form-select">USA</option>
+                <option class="form-select">UK</option>
+                <option class="form-select">Germany</option>
+                <option class="form-select">Poland</option>
+                <option class="form-select">Switzerland</option>
+                <option class="form-select">Prague</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <label class="form-label pe-5 text-light">Languages Known</label>
+        <input class="form-check-inline" type="checkbox" value="english" />
+        <label class="form-check-label text-light pe-2">English</label>
+        <input class="form-check-inline" type="checkbox" value="hindi" />
+        <label class="form-check-label text-light pe-2">Hindi</label>
+        <input class="form-check-inline" type="checkbox" value="malayalam" />
+        <label class="form-check-label text-light pe-2">Malayalam</label>
+        <input class="form-check-inline" type="checkbox" value="tamil" />
+        <label class="form-check-label text-light pe-2">Tamil</label><br />
+        <br />
+        <input class="form-check-inline" type="checkbox" value="true" />
+        <label class="form-label pe-5 text-light"
+          >Hereby, I declare all the given details are true</label
+        >
+        <h6 class="text-end pb-4 text-light pe-3">
+          Log in to <a href="#">Ethnus</a> website
+        </h6>
+      </form>
+
+      <button class="btn btn-success text-light" style="width: 100px">
+        Register
+      </button>
+      <br />
+      <br />
+    </center>
+    <script>
+      function name() {
+        var nm = document.getElementById("i1").value;
+        if (nm.length > 5) {
+          document.getElementById("msg1").innerHTML = "<p>STRONG</p>";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+      }
+      .outer-container {
+        margin: auto;
+        width: 50%;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .inner-container {
+        padding: 10px;
+        padding-bottom: 0px;
+        background-color: white;
+      }
+      label[for="username"],
+      label[for="password"] {
+        font-weight: bold;
+      }
+      .image {
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+      }
+      img {
+        height: 20%;
+        width: 20%;
+        border-radius: 30%;
+      }
+      .login {
+        width: 100%;
+        background-color: white;
+        padding-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        padding: 8px 12px;
+        box-sizing: border-box;
+      }
+      #login-btn {
+        background-color: rgb(52, 209, 52);
+        width: 100%;
+        height: 25px;
+        color: white;
+        border: none;
+        margin-bottom: 5px;
+      }
+      .lower {
+        padding: 10px;
+      }
+      #forgot {
+        padding-top: 5px;
+        float: right;
+      }
+      #forgot a {
+        color: black;
+      }
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .icon {
+        padding: 10px;
+        background: rgb(43, 146, 248);
+        color: white;
+        min-width: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-container mt-5">
+      <div class="inner-container">
+        <div class="image">
+          <img
+            src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png"
+          />
+        </div>
+        <div class="login">
+          <form method="get">
+            <i class="fa fa-user icon"> </i>
+            <input
+              type="text"
+              placeholder="Username"
+              class="form-control"
+            /><br />
+            <i class="fa fa-lock icon"></i>
+            <input
+              type="password"
+              placeholder="Password"
+              class="form-control"
+            /><br />
+            <center>
+              <button type="submit" class="btn btn-primary" style="width: 80%">
+                Login
+              </button>
+            </center>
+            <br />
+          </form>
+        </div>
+      </div>
+      <div class="lower">
+        <label
+          ><input type="checkbox" checked />
+          <h6>Remember Me</h6> </label
+        ><span id="forgot"
+          ><h6>Forgot <a href="#">Password?</a></h6></span
+        >
+      </div>
+    </div>
+    <center>
+      <br />
+      <h5>Don't have an account? <a href="#"> Sign up</a></h5>
+    </center>
+  </body>
+</html>
